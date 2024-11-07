@@ -1,11 +1,14 @@
+import s from "./SearchBox.module.css";
 const Searchbox = ({ value, onChange }) => {
-  const handleChange = (evt) => {
-    onChange(evt.target.value);
-  };
   return (
-    <div>
+    <div className={s.div}>
       <p>Find contacts by name</p>
-      <input type="text" value={value} onChange={handleChange} />
+      <input
+        className={s.input}
+        type="text"
+        value={value}
+        onChange={onChange}
+      />
     </div>
   );
 };

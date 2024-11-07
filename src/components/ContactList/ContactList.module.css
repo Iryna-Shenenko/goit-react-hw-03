@@ -1,5 +1,6 @@
-.listItem {
+.list {
     display: flex;
-    gap: 24px;
-    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 14px;
+
 }
